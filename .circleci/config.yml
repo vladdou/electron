@@ -66,6 +66,9 @@ env-enable-sccache: &env-enable-sccache
 env-send-slack-notifications: &env-send-slack-notifications
   NOTIFY_SLACK: true
 
+env-asan: &env-asan
+  GN_SANITIZERS: 'is_asan = true'
+
 # Individual (shared) steps.
 step-maybe-notify-slack-failure: &step-maybe-notify-slack-failure
   run:
@@ -148,7 +151,7 @@ step-gn-gen-default: &step-gn-gen-default
     name: Default GN gen
     command: |
       cd src
-      gn gen out/Default --args='import("'$GN_CONFIG'") cc_wrapper="'"$SCCACHE_PATH"'"'" $GN_EXTRA_ARGS"
+      gn gen out/Default --args='import("'$GN_CONFIG'") cc_wrapper="'"$SCCACHE_PATH"'"'" $GN_EXTRA_ARGS $GN_SANITIZERS"
 
 step-electron-build: &step-electron-build
   run:
@@ -234,7 +237,7 @@ step-ffmpeg-gn-gen: &step-ffmpeg-gn-gen
     name: ffmpeg GN gen
     command: |
       cd src
-      gn gen out/ffmpeg --args='import("//electron/build/args/ffmpeg.gn") cc_wrapper="'"$SCCACHE_PATH"'"'" $GN_EXTRA_ARGS"
+      gn gen out/ffmpeg --args='import("//electron/build/args/ffmpeg.gn") cc_wrapper="'"$SCCACHE_PATH"'"'" $GN_EXTRA_ARGS $GN_SANITIZERS"
 
 step-ffmpeg-build: &step-ffmpeg-build
   run:
@@ -677,6 +680,14 @@ jobs:
       <<: *env-enable-sccache
     <<: *steps-electron-build-for-tests
 
+  linux-x64-testing-asan:
+    <<: *machine-linux-2xlarge
+    environment:
+      <<: *env-testing-build
+      <<: *env-enable-sccache
+      <<: *env-asan
+    <<: *steps-electron-build-for-tests
+
   linux-x64-ffmpeg:
     <<: *machine-linux-medium
     environment:
@@ -915,6 +926,12 @@ jobs:
       <<: *env-headless-testing
     <<: *steps-tests
 
+  linux-x64-testing-tests-asan:
+    <<: *machine-linux-medium
+    environment:
+      <<: *env-headless-testing
+    <<: *steps-tests
+
   linux-x64-release-tests:
     <<: *machine-linux-medium
     environment:
@@ -1028,6 +1045,24 @@ workflows:
       - linux-arm64-testing:
           requires:
             - linux-checkout
+
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - this-is-just-to-prevent-the-normal-workflow-from-triggering
+
+  workflow-for-testing-this-pr-will-remove-before-merge:
+    jobs:
+      - linux-checkout
+      - linux-x64-testing-asan:
+          requires:
+            - linux-checkout
+      - linux-x64-testing-tests-asan:
+          requires:
+            - linux-x64-testing-asan
 
   build-mac-fork-prs:
     jobs:
