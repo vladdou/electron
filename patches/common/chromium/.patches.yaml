@@ -529,3 +529,10 @@ patches:
     majority of changes originally come from these PRs:
       * https://github.com/electron/electron/pull/1835
       * https://github.com/electron/electron/pull/8596
+-
+  author: deepak1556 <hop2deep@gmail.com>
+  file: chrome_printing_service_gn.patch
+  description:  |
+    Moves sources dependent on print preview behind buildflag, without
+    this sources were incorrectly being included when print preview is
+    disabled. This can be upstreamed.
