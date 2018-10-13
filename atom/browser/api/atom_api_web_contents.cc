@@ -102,37 +102,12 @@
 
 #if BUILDFLAG(ENABLE_PRINTING)
 #include "atom/browser/printing/print_preview_message_handler.h"
-#include "chrome/browser/printing/print_view_manager_basic.h"
+#include "chrome/browser/printing/print_view_manager_common.h"
 #endif
 
 #include "atom/common/node_includes.h"
 
-namespace {
-
-struct PrintSettings {
-  bool silent;
-  bool print_background;
-  base::string16 device_name;
-};
-
-}  // namespace
-
 namespace mate {
-
-template <>
-struct Converter<PrintSettings> {
-  static bool FromV8(v8::Isolate* isolate,
-                     v8::Local<v8::Value> val,
-                     PrintSettings* out) {
-    mate::Dictionary dict;
-    if (!ConvertFromV8(isolate, val, &dict))
-      return false;
-    dict.Get("silent", &(out->silent));
-    dict.Get("printBackground", &(out->print_background));
-    dict.Get("deviceName", &(out->device_name));
-    return true;
-  }
-};
 
 template <>
 struct Converter<printing::PrinterBasicInfo> {
@@ -1429,24 +1404,32 @@ bool WebContents::IsCurrentlyAudible() {
 
 void WebContents::Print(mate::Arguments* args) {
 #if BUILDFLAG(ENABLE_PRINTING)
-  PrintSettings settings = {false, false, base::string16()};
-  if (args->Length() >= 1 && !args->GetNext(&settings)) {
-    args->ThrowError();
+  bool silent, print_background = false;
+  base::string16 device_name;
+  mate::Dictionary options;
+  auto settings = std::make_unique<base::DictionaryValue>();
+  if (args->Length() >= 1 && !args->GetNext(&options)) {
+    args->ThrowError("Invalid print settings specified");
     return;
   }
-  auto* print_view_manager_basic_ptr =
-      printing::PrintViewManagerBasic::FromWebContents(web_contents());
-  if (args->Length() == 2) {
-    base::Callback<void(bool)> callback;
-    if (!args->GetNext(&callback)) {
-      args->ThrowError();
-      return;
-    }
-    print_view_manager_basic_ptr->SetCallback(callback);
+  options.Get("silent", &silent);
+  options.Get("printBackground", &print_background);
+  if (options.Get("deviceName", &device_name) && !device_name.empty()) {
+    settings->SetString(printing::kSettingDeviceName, device_name);
   }
-  print_view_manager_basic_ptr->PrintNow(
-      web_contents()->GetMainFrame(), settings.silent,
-      settings.print_background, settings.device_name);
+  /*
+    if (args->Length() == 2) {
+      base::Callback<void(bool)> callback;
+      if (!args->GetNext(&callback)) {
+        args->ThrowError("Invalid type specified in place of optional
+    callback"); return;
+      }
+    }
+  */
+  printing::StartPrint(web_contents(), true /* print_preview_disabled */,
+                       false /* has_selection */, silent, print_background,
+                       *settings);
+  last_print_settings_ = std::move(settings);
 #else
   LOG(ERROR) << "Printing is disabled";
 #endif
@@ -1467,8 +1450,8 @@ std::vector<printing::PrinterBasicInfo> WebContents::GetPrinterList() {
 void WebContents::PrintToPDF(const base::DictionaryValue& setting,
                              const PrintToPDFCallback& callback) {
 #if BUILDFLAG(ENABLE_PRINTING)
-  PrintPreviewMessageHandler::FromWebContents(web_contents())
-      ->PrintToPDF(setting, callback);
+  // PrintPreviewMessageHandler::FromWebContents(web_contents())
+  //    ->PrintToPDF(setting, callback);
 #endif
 }
 

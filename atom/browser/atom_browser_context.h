@@ -60,6 +60,7 @@ class AtomBrowserContext
 
   // content::BrowserContext:
   base::FilePath GetPath() const override;
+  PrefService* GetPrefs() override;
   bool IsOffTheRecord() const override;
   content::ResourceContext* GetResourceContext() override;
   std::unique_ptr<content::ZoomLevelDelegate> CreateZoomLevelDelegate(

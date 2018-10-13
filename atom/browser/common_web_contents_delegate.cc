@@ -44,8 +44,8 @@
 #endif
 
 #if BUILDFLAG(ENABLE_PRINTING)
-#include "atom/browser/printing/print_preview_message_handler.h"
-#include "chrome/browser/printing/print_view_manager_basic.h"
+// #include "atom/browser/printing/print_preview_message_handler.h"
+#include "chrome/browser/printing/printing_init.h"
 #endif
 
 using content::BrowserThread;
@@ -178,8 +178,8 @@ void CommonWebContentsDelegate::InitWithWebContents(
   web_contents->SetDelegate(this);
 
 #if BUILDFLAG(ENABLE_PRINTING)
-  printing::PrintViewManagerBasic::CreateForWebContents(web_contents);
-  PrintPreviewMessageHandler::CreateForWebContents(web_contents);
+  printing::InitializePrinting(web_contents);
+  // PrintPreviewMessageHandler::CreateForWebContents(web_contents);
 #endif
 
   // Determien whether the WebContents is offscreen.

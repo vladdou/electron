@@ -215,7 +215,8 @@ void AtomBrowserClient::RenderProcessWillLaunch(
     return;
 
 #if BUILDFLAG(ENABLE_PRINTING)
-  host->AddFilter(new printing::PrintingMessageFilter(process_id));
+  host->AddFilter(new printing::PrintingMessageFilter(
+      process_id, host->GetBrowserContext()));
 #endif
 
 #if BUILDFLAG(ENABLE_TTS)

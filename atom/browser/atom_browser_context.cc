@@ -192,6 +192,13 @@ base::FilePath AtomBrowserContext::GetPath() const {
   return path_;
 }
 
+PrefService* AtomBrowserContext::GetPrefs() {
+  if (!prefs_) {
+    InitPrefs();
+  }
+  return prefs_.get();
+}
+
 bool AtomBrowserContext::IsOffTheRecord() const {
   return in_memory_;
 }
