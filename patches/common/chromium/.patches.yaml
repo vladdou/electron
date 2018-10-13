@@ -536,3 +536,11 @@ patches:
     Moves sources dependent on print preview behind buildflag, without
     this sources were incorrectly being included when print preview is
     disabled. This can be upstreamed.
+-
+  author: deepak1556 <hop2deep@gmail.com>
+  file: content_browser_context.patch
+  description:  |
+    Allows registering preferences from //chrome sources electron depends,
+    by sharing the preferences service from browser context. All browser
+    context instances in upstream instantiate a preference service, it
+    might be worth upstreaming this patch.

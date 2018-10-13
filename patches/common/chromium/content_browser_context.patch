@@ -1,0 +1,51 @@
+diff --git a/content/browser/browser_context.cc b/content/browser/browser_context.cc
+index 199a676de558..bef033f9d485 100644
+--- a/content/browser/browser_context.cc
++++ b/content/browser/browser_context.cc
+@@ -27,6 +27,7 @@
+ #include "base/threading/thread_task_runner_handle.h"
+ #include "base/unguessable_token.h"
+ #include "build/build_config.h"
++#include "components/prefs/pref_service.h"
+ #include "content/browser/blob_storage/chrome_blob_storage_context.h"
+ #include "content/browser/browsing_data/browsing_data_remover_impl.h"
+ #include "content/browser/content_service_delegate_impl.h"
+@@ -65,7 +66,6 @@
+ #include "storage/browser/database/database_tracker.h"
+ #include "storage/browser/fileapi/external_mount_points.h"
+ 
+-
+ using base::UserDataAdapter;
+ 
+ namespace content {
+@@ -694,4 +694,8 @@ media::VideoDecodePerfHistory* BrowserContext::GetVideoDecodePerfHistory() {
+   return decode_history;
+ }
+ 
++PrefService* BrowserContext::GetPrefs() {
++  return nullptr;
++}
++
+ }  // namespace content
+diff --git a/content/public/browser/browser_context.h b/content/public/browser/browser_context.h
+index 4f794e25ac79..13b5674231b2 100644
+--- a/content/public/browser/browser_context.h
++++ b/content/public/browser/browser_context.h
+@@ -27,6 +27,7 @@
+ #endif
+ 
+ class GURL;
++class PrefService;
+ 
+ namespace base {
+ class FilePath;
+@@ -329,6 +330,9 @@ class CONTENT_EXPORT BrowserContext : public base::SupportsUserData {
+   // directly, so privacy is not compromised.
+   virtual media::VideoDecodePerfHistory* GetVideoDecodePerfHistory();
+ 
++  // Returns the pref service registered for this context.
++  virtual PrefService* GetPrefs();
++
+  private:
+   const std::string unique_id_;
+   bool was_notify_will_be_destroyed_called_ = false;
