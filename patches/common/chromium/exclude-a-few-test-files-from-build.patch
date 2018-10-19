@@ -3,8 +3,8 @@ From: Aleksei Kuzmin <alkuzmin@microsoft.com>
 Date: Thu, 20 Sep 2018 17:50:45 -0700
 Subject: exclude-a-few-test-files-from-build.patch
 
-Compilation of those files fails with the Chromium 67.
-Remove the patch during the Chromium 68 upgrade.
+Compilation of those files fails with the Chromium 68.
+Remove the patch during the Chromium 69 upgrade.
 
 diff --git a/third_party/blink/renderer/platform/BUILD.gn b/third_party/blink/renderer/platform/BUILD.gn
 index d5d8e48305ba..070c6be426f4 100644
