@@ -40,6 +40,16 @@ def get_repo_root(path):
   return get_repo_root(parent_path)
 
 
+def am(repo, patch_data, threeway=False):
+  args = []
+  if threeway:
+    args += ['--3way']
+  proc = subprocess.Popen(
+      ['git', '-C', repo, 'am'] + args,
+      stdin=subprocess.PIPE)
+  proc.communicate(patch_data)
+
+
 def apply_patch(repo, patch_path, directory=None, index=False, reverse=False):
   args = ['git', '-C', repo, 'apply',
           '--ignore-space-change',

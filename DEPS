@@ -15,14 +15,12 @@ vars = {
     '4d44266b78256449dd6ae86e419e3ec07257b569',
 
   'boto_version': 'f7574aa6cc2c819430c1f05e9a1a1a666ef8169b',
-  'pyyaml_version': '3.12',
   'requests_version': 'e4d59bedfd3c7f4f254f4f5d036587bcd8152458',
 
   'boto_git': 'https://github.com/boto',
   'chromium_git': 'https://chromium.googlesource.com',
   'electron_git': 'https://github.com/electron',
   'requests_git': 'https://github.com/kennethreitz',
-  'yaml_git': 'https://github.com/yaml',
 
   # To be able to build clean Chromium from sources.
   'apply_patches': True,
@@ -56,8 +54,6 @@ deps = {
     (Var("chromium_git")) + '/chromium/src.git@' + (Var("chromium_version")),
   'src/third_party/electron_node':
     (Var("electron_git")) + '/node.git@' + (Var("node_version")),
-  'src/electron/vendor/pyyaml':
-    (Var("yaml_git")) + '/pyyaml.git@' + (Var("pyyaml_version")),
   'src/electron/vendor/boto': {
     'url': Var('boto_git') + '/boto.git' + '@' +  Var('boto_version'),
     'condition': 'checkout_boto',
@@ -75,9 +71,7 @@ hooks = [
     'pattern': 'src/electron',
     'action': [
       'python',
-      'src/electron/script/apply-patches',
-      '--project-root=.',
-      '--commit',
+      'src/electron/script/apply-all-patches',
     ],
   },
   {
