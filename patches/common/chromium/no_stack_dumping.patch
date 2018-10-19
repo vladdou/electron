@@ -1,4 +1,4 @@
-From 643954ec09f12c4d97767cbfcfb24e92fbcd5230 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Aleksei Kuzmin <alkuzmin@microsoft.com>
 Date: Thu, 20 Sep 2018 17:46:10 -0700
 Subject: no_stack_dumping.patch

@@ -1,4 +1,4 @@
-From 1294052a41b0f304e45e5bea986b194bee511d49 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Aleksei Kuzmin <alkuzmin@microsoft.com>
 Date: Thu, 20 Sep 2018 17:47:33 -0700
 Subject: disable_user_gesture_requirement_for_beforeunload_dialogs.patch

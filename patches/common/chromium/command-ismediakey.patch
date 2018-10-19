@@ -1,4 +1,4 @@
-From 2d028f727b68a0aa7f83cc069e1df4d13a9e173e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeremy Apthorp <jeremya@chromium.org>
 Date: Wed, 10 Oct 2018 15:07:34 -0700
 Subject: define Command::IsMediaKey on mac

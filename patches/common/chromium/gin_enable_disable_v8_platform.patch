@@ -1,4 +1,4 @@
-From eaf64921a97d513151d48ab01975b5ac966a7e34 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Cheng Zhao <zcbenz@gmail.com>
 Date: Thu, 20 Sep 2018 17:47:44 -0700
 Subject: gin_enable_disable_v8_platform.patch

@@ -1,4 +1,4 @@
-From 9925e2a4ee037c1db3b38131322d383743ece61b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: John Kleinschmidt <jkleinsc@github.com>
 Date: Thu, 18 Oct 2018 17:08:28 -0700
 Subject: verbose_generate_breakpad_symbols.patch

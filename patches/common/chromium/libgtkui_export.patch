@@ -1,4 +1,4 @@
-From 4eacd7975250d8954e461f880d6bb97dcb4b003d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeremy Apthorp <nornagon@nornagon.net>
 Date: Thu, 20 Sep 2018 17:48:31 -0700
 Subject: libgtkui_export.patch
@@ -48,7 +48,7 @@ index e4e0da40981c..af028715ada9 100644
    Gtk2StatusIcon(const gfx::ImageSkia& image, const base::string16& tool_tip);
    ~Gtk2StatusIcon() override;
 diff --git a/chrome/browser/ui/libgtkui/gtk_util.h b/chrome/browser/ui/libgtkui/gtk_util.h
-index d9f245070249..56cce5fa3e0b 100644
+index d9f245070249..a0f033c3e3f7 100644
 --- a/chrome/browser/ui/libgtkui/gtk_util.h
 +++ b/chrome/browser/ui/libgtkui/gtk_util.h
 @@ -11,6 +11,7 @@

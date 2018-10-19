@@ -1,4 +1,4 @@
-From 691dce7bf41c6fbc8ce3bf9fc3fb4ec0ef0cca21 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anonymous <anonymous@electronjs.org>
 Date: Thu, 20 Sep 2018 17:46:32 -0700
 Subject: scoped_clipboard_writer.patch

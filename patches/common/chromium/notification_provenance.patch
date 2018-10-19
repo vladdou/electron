@@ -1,4 +1,4 @@
-From 5c9dd74385e37830bff8918b54868ac37042c513 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeremy Apthorp <jeremya@chromium.org>
 Date: Fri, 5 Oct 2018 14:22:06 -0700
 Subject: pass RenderProcessHost through to PlatformNotificationService
@@ -51,7 +51,7 @@ index 193f5d241c31..3cfcc6b86ae1 100644
  
    scoped_refptr<ServiceWorkerContextWrapper> service_worker_context_;
 diff --git a/content/browser/notifications/blink_notification_service_impl_unittest.cc b/content/browser/notifications/blink_notification_service_impl_unittest.cc
-index 618c7bd88cde..f528be53cffe 100644
+index 618c7bd88cde..be08e89b5c6d 100644
 --- a/content/browser/notifications/blink_notification_service_impl_unittest.cc
 +++ b/content/browser/notifications/blink_notification_service_impl_unittest.cc
 @@ -113,7 +113,7 @@ class BlinkNotificationServiceImplTest : public ::testing::Test {

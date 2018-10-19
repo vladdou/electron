@@ -1,4 +1,4 @@
-From 602c08e90102a25894a4d48d236258cae6b982c6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Charles Kerr <charles@charleskerr.com>
 Date: Thu, 20 Sep 2018 17:50:17 -0700
 Subject: allow_nested_error_trackers.patch

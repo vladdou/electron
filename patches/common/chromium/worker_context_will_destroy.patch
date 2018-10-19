@@ -1,4 +1,4 @@
-From d822ef159744a681bee4f1ca8e1a7776a76e6d5e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Cheng Zhao <zcbenz@gmail.com>
 Date: Thu, 20 Sep 2018 17:47:12 -0700
 Subject: worker_context_will_destroy.patch

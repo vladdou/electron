@@ -1,4 +1,4 @@
-From e5aff631dbe62f46913d03492a547daab543dcd3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeremy Apthorp <nornagon@nornagon.net>
 Date: Thu, 18 Oct 2018 17:06:46 -0700
 Subject: crashpad_http_status.patch

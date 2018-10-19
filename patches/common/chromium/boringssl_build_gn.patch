@@ -1,4 +1,4 @@
-From 1e77d2109d61aea5270d1026a7df5fb44e639568 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeremy Apthorp <nornagon@nornagon.net>
 Date: Thu, 20 Sep 2018 17:48:05 -0700
 Subject: boringssl_build_gn.patch

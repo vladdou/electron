@@ -1,4 +1,4 @@
-From 2f416aedbe6580b1ef07a2f76c22bcd9d1ef5942 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Aleksei Kuzmin <alkuzmin@microsoft.com>
 Date: Thu, 20 Sep 2018 17:50:45 -0700
 Subject: exclude-a-few-test-files-from-build.patch
