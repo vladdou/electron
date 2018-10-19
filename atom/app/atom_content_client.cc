@@ -8,7 +8,6 @@
 #include <vector>
 
 #include "atom/common/atom_version.h"
-#include "atom/common/chrome_version.h"
 #include "atom/common/options_switches.h"
 #include "base/command_line.h"
 #include "base/files/file_util.h"
@@ -19,6 +18,7 @@
 #include "content/public/common/pepper_plugin_info.h"
 #include "content/public/common/user_agent.h"
 #include "electron/buildflags/buildflags.h"
+#include "electron/chrome_version.h"
 #include "ppapi/shared_impl/ppapi_permissions.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "url/url_constants.h"

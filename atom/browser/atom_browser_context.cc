@@ -17,7 +17,6 @@
 #include "atom/browser/special_storage_policy.h"
 #include "atom/browser/web_view_manager.h"
 #include "atom/common/atom_version.h"
-#include "atom/common/chrome_version.h"
 #include "atom/common/options_switches.h"
 #include "base/command_line.h"
 #include "base/files/file_path.h"
@@ -43,6 +42,7 @@
 #include "content/browser/blob_storage/chrome_blob_storage_context.h"
 #include "content/public/browser/storage_partition.h"
 #include "content/public/common/user_agent.h"
+#include "electron/chrome_version.h"
 #include "net/base/escape.h"
 
 using content::BrowserThread;

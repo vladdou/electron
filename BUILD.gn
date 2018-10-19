@@ -192,6 +192,24 @@ grit("resources") {
   output_dir = "$target_gen_dir"
 }
 
+action("gen_chrome_version") {
+  inputs = [
+    "DEPS",
+  ]
+
+  outputs = [
+    "$target_gen_dir/chrome_version.h",
+  ]
+
+  script = "tools/gen-chrome-version-header.py"
+  args = [
+    "--input-deps",
+    rebase_path("DEPS"),
+    "--output-path",
+    rebase_path(outputs[0]),
+  ]
+}
+
 static_library("electron_lib") {
   configs += [ "//v8:external_startup_data" ]
   configs += [ "//third_party/electron_node:node_internals" ]
@@ -200,6 +218,7 @@ static_library("electron_lib") {
 
   deps = [
     ":atom_js2c",
+    ":gen_chrome_version",
     "brightray",
     "buildflags",
     "chromium_src:chrome",
