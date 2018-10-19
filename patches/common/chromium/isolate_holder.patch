@@ -1,3 +1,12 @@
+From daa47d0f4536629eaf72109bfe8a50ea8f1a5897 Mon Sep 17 00:00:00 2001
+From: Samuel Attard <samuel.r.attard@gmail.com>
+Date: Thu, 18 Oct 2018 17:07:27 -0700
+Subject: isolate_holder.patch
+
+Pass pre allocated isolate for initialization, node platform
+needs to register on an isolate so that it can be used later
+down in the initialization process of an isolate.
+
 diff --git a/gin/isolate_holder.cc b/gin/isolate_holder.cc
 index e099fd3f03e5..4b362843e4f8 100644
 --- a/gin/isolate_holder.cc
@@ -39,3 +48,6 @@ index 84cf66e6e9cd..cc0d65e4e4be 100644
    ~IsolateHolder();
  
    // Should be invoked once before creating IsolateHolder instances to
+-- 
+2.17.0
+

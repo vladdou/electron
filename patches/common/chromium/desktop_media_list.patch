@@ -1,3 +1,13 @@
+From cb3b3a15ed1b258895dcc0edd9eb747a0f0ebb0d Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Thu, 18 Oct 2018 17:07:01 -0700
+Subject: desktop_media_list.patch
+
+* Adds a new observer method to DesktopMediaListObserver for
+  desktop capture api.
+* Backports https://chromium-review.googlesource.com/c/chromium/src/+/1199806
+  that fixes crash with screen capturer, can be removed in 71.0.3539.0
+
 diff --git a/chrome/browser/media/webrtc/desktop_media_list.h b/chrome/browser/media/webrtc/desktop_media_list.h
 index 8e02a8a95eb0..3497b85428a5 100644
 --- a/chrome/browser/media/webrtc/desktop_media_list.h
@@ -288,3 +298,6 @@ index e6f0e17b05ee..75c9ca04ce48 100644
    std::unique_ptr<Worker> worker_;
  
  #if defined(USE_AURA)
+-- 
+2.17.0
+

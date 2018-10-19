@@ -1,5 +1,16 @@
+From 538d8d969a1d9938b5536a022587bb36f79c736a Mon Sep 17 00:00:00 2001
+From: zcbenz <zcbenz@gmail.com>
+Date: Thu, 18 Oct 2018 17:08:33 -0700
+Subject: web_preferences.patch
+
+Add a node_integration field to WebPreferences so we can determine whether
+a frame has node integration in renderer process.
+
+This is required by the nativeWindowOpen option, which put multiple main
+frames in one renderer process.
+
 diff --git a/content/public/common/common_param_traits_macros.h b/content/public/common/common_param_traits_macros.h
-index 57f03dc..7c4409e 100644
+index 57f03dc1ed38..7c4409e6e9ab 100644
 --- a/content/public/common/common_param_traits_macros.h
 +++ b/content/public/common/common_param_traits_macros.h
 @@ -198,6 +198,7 @@ IPC_STRUCT_TRAITS_BEGIN(content::WebPreferences)
@@ -11,7 +22,7 @@ index 57f03dc..7c4409e 100644
    IPC_STRUCT_TRAITS_MEMBER(text_autosizing_enabled)
    IPC_STRUCT_TRAITS_MEMBER(double_tap_to_zoom_enabled)
 diff --git a/content/public/common/web_preferences.h b/content/public/common/web_preferences.h
-index 78cbf5f..b33ac28 100644
+index 78cbf5f3db86..b33ac2894c7c 100644
 --- a/content/public/common/web_preferences.h
 +++ b/content/public/common/web_preferences.h
 @@ -222,6 +222,9 @@ struct CONTENT_EXPORT WebPreferences {
@@ -24,3 +35,5 @@ index 78cbf5f..b33ac28 100644
    bool immersive_mode_enabled;
  
    bool text_autosizing_enabled;
+-- 
+2.17.0

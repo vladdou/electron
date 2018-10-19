@@ -1,3 +1,19 @@
+From b672e0cdf29a73070bf6981196bc2cae41311b62 Mon Sep 17 00:00:00 2001
+From: Heilig Benedek <benecene@gmail.com>
+Date: Thu, 18 Oct 2018 17:08:13 -0700
+Subject: color_chooser.patch
+
+Removes a couple of stuff from the chromium implementation of ColorChooser
+to decouple it from dependencies.
+
+Most of the stuff removed is actually related to other dialog types that
+we don't currently support, but chrome/browser/ui/browser_dialogs.h has
+a function for them to create them. Also disables a DCHECK that crashes
+the ColorChooser on Windows, that DCHECK most likely is an artifact that
+remained in chromium from a long time ago (last update of that part of the
+code was around 2012-2013, and this is purely UI, I don't think they have
+automated tests for it).
+
 diff --git a/chrome/browser/ui/browser_dialogs.h b/chrome/browser/ui/browser_dialogs.h
 index f57c1ded416a..59fdd948c3c5 100644
 --- a/chrome/browser/ui/browser_dialogs.h
@@ -72,3 +88,6 @@ index 06381ef0e5ca..acb3a6e9e647 100644
    current_color_chooser_ = NULL;
    if (web_contents_)
      web_contents_->DidEndColorChooser();
+-- 
+2.17.0
+
