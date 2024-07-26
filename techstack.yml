@@ -1,0 +1,805 @@
+repo_name: vladdou/electron
+report_id: be0977b5d09780935051fa92e2a4ef1f
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-26T05:34:55+00:00'
+requested_by: MarshallOfSound
+provider: github
+branch: master
+detected_tools_count: 54
+tools:
+- name: C lang
+  description: One of the most widely used programming languages of all time
+  website_url: http://en.wikipedia.org/wiki/C_(programming_language)
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: C++
+  description: Has imperative, object-oriented and generic programming features, while
+    also providing the facilities for low level memory manipulation
+  website_url: http://www.cplusplus.com/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1049/cplusplus.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: CoffeeScript
+  description: A little language that compiles into JavaScript
+  website_url: http://coffeescript.org/
+  version: 1.12.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1178/slQydAMv.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/fixtures/module/test.coffee
+  last_updated_by: Kevin Sawicki
+  last_updated_on: 2017-02-07 16:48:01.000000000 Z
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: Objective-C
+  description: The primary programming language you use when writing software for
+    OS X and iOS
+  website_url: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: ".NET"
+  description: A free, cross-platform, open source developer platform for building
+    many different types of applications
+  website_url: http://www.microsoft.com/net/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-04-14 14:48:35.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/Dockerfile
+  detection_source: Dockerfile
+  last_updated_by: Jeremy Apthorp
+  last_updated_on: 2018-09-25 19:30:22.000000000 Z
+- name: ws
+  description: A Node.js WebSocket library
+  website_url: https://github.com/websockets/ws
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Realtime Backend / API
+  image_url: https://img.stackshare.io/service/11381/no-img-open-source.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package.json
+  detection_source: spec/package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-07-17 08:28:14.000000000 Z
+- name: Browserify
+  description: Browser-side require() the node.js way
+  website_url: http://browserify.org/
+  version: 13.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/849/9esmqty2.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Thiago de Arruda
+  last_updated_on: 2016-08-21 10:30:14.000000000 Z
+- name: Chai
+  description: A BDD / TDD assertion library
+  website_url: http://chaijs.com/
+  version: 4.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1725/chai.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-07-17 08:28:14.000000000 Z
+- name: CircleCI
+  description: Automate your development process quickly, safely, and at scale
+  website_url: https://circleci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/190/CvqrSSFs_400x400.jpg
+  detection_source_url: https://github.com/vladdou/electron/blob/master/.circleci/config.yml
+  detection_source: ".circleci/config.yml"
+  last_updated_by: Alexey Kuzmin
+  last_updated_on: 2018-10-19 23:44:36.000000000 Z
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/vladdou/electron/blob/master/lib/.eslintrc
+  detection_source: lib/.eslintrc
+  last_updated_by: Samuel Attard
+  last_updated_on: 2018-09-22 12:28:50.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 5.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: John Kleinschmidt
+  last_updated_on: 2018-09-14 18:56:16.000000000 Z
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-04-14 14:48:35.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package.json
+  detection_source: spec/package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-07-17 08:28:14.000000000 Z
+- name: Bluebird
+  description: A full featured promise library with unmatched performance
+  website_url: https://github.com/petkaantonov/bluebird/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/11991/bb.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package.json
+  detection_source: spec/package.json
+  last_updated_by: Thiago de Arruda
+  last_updated_on: 2017-12-04 19:52:07.000000000 Z
+- name: Q
+  description: A promise library for JavaScript
+  website_url: https://github.com/kriskowal/q
+  version: 1.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/4697/default_2d5a1d7c5eb520cdeb7db120e767345004a1d0d4.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-07-17 08:28:14.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/vladdou/electron
+  detection_source: Repo Metadata
+- name: Ubuntu
+  description: The leading OS for PC, tablet, phone and cloud
+  website_url: http://www.ubuntu.com/
+  version: 18.04.0
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/3511/cof_orange_hex.jpg
+  detection_source_url: https://github.com/vladdou/electron/blob/master/Dockerfile
+  detection_source: Dockerfile
+  last_updated_by: Jeremy Apthorp
+  last_updated_on: 2018-09-25 19:30:22.000000000 Z
+- name: husky
+  website_url: https://github.com/typicode/husky
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/9527/5502029.jpeg
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Zeke Sikelianos
+  last_updated_on: 2017-07-12 17:18:40.000000000 Z
+- name: minimist
+  description: Parse argument options
+  package_url: https://www.npmjs.com/minimist
+  version: 0.0.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15918/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: John Kleinschmidt
+  last_updated_on: 2017-10-23 15:02:50.000000000 Z
+  vulnerabilities:
+  - name: Prototype Pollution in minimist
+    cve_id: CVE-2021-44906
+    cve_url: https://github.com/advisories/GHSA-xvch-5gv4-984h
+    detected_date: Mar 22
+    severity: critical
+    first_patched: 0.2.4
+  - name: Prototype Pollution in minimist
+    cve_id: CVE-2020-7598
+    cve_url: https://github.com/advisories/GHSA-vh95-rmgr-6w4m
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 0.2.1
+  - name: 'Withdrawn: ESLint dependencies are vulnerable (ReDoS and Prototype Pollution)'
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-7fhm-mqm4-2wp7
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.2.2
+- name: node-fetch
+  description: A light-weight module that brings window.fetch to node.js
+  package_url: https://www.npmjs.com/node-fetch
+  version: 2.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15978/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nitish Sakhawalkar
+  last_updated_on: 2018-10-15 15:26:47.000000000 Z
+  vulnerabilities:
+  - name: node-fetch forwards secure headers to untrusted sites
+    cve_id: CVE-2022-0235
+    cve_url: https://github.com/advisories/GHSA-r683-j2x4-v87g
+    detected_date: Jan 22
+    severity: high
+    first_patched: 2.6.7
+  - name: The `size` option isn't honored after following a redirect in node-fetch
+    cve_id: CVE-2020-15168
+    cve_url: https://github.com/advisories/GHSA-w7rc-rwvf-8q5r
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.6.1
+- name: serve
+  description: Static file serving and directory listing
+  package_url: https://www.npmjs.com/serve
+  version: 6.5.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16484/default_73c88a18b684e01cbdbf945631a40a44aff5a777.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Robin Andersson
+  last_updated_on: 2018-08-17 16:48:01.000000000 Z
+  vulnerabilities:
+  - name: Directory Traversal in serve
+    cve_id: CVE-2019-5417
+    cve_url: https://github.com/advisories/GHSA-xg75-3277-gvvj
+    detected_date: Aug 22
+    severity: high
+    first_patched: 7.1.3
+  - name: Path Traversal in serve
+    cve_id: CVE-2019-5415
+    cve_url: https://github.com/advisories/GHSA-v588-qcp3-jv46
+    detected_date: Aug 22
+    severity: high
+    first_patched: 7.1.3
+  - name: Path Traversal in serve
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-48gc-5j93-5cfq
+    detected_date: Aug 22
+    severity: high
+    first_patched: 10.1.2
+  - name: Cross-Site Scripting in serve
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-xw79-hhv6-578c
+    detected_date: Aug 22
+    severity: high
+    first_patched: 10.0.2
+  - name: Cross-Site Scripting in serve
+    cve_id:
+    cve_url: https://github.com/advisories/GHSA-cpgr-wmr9-qxv4
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 10.0.2
+  - name: Information Exposure on Case Insensitive File Systems in serve
+    cve_id: CVE-2018-3809
+    cve_url: https://github.com/advisories/GHSA-686g-3xr3-x4x6
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 7.0.0
+- name: request
+  description: Simplified HTTP request client
+  package_url: https://www.npmjs.com/request
+  version: 2.88.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15823/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Samuel Attard
+  last_updated_on: 2018-09-13 15:35:18.000000000 Z
+  vulnerabilities:
+  - name: Server-Side Request Forgery in Request
+    cve_id: CVE-2023-28155
+    cve_url: https://github.com/advisories/GHSA-p8p7-x288-28g6
+    detected_date: Mar 17
+    severity: moderate
+    first_patched:
+- name: semver
+  description: The semantic version parser used by npm
+  package_url: https://www.npmjs.com/semver
+  version: 5.0.3
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18809/default_dad3dc9dde4b82dc2a7bd32aa091165887abe57b.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Samuel Attard
+  last_updated_on: 2018-06-21 08:06:23.000000000 Z
+  vulnerabilities:
+  - name: semver vulnerable to Regular Expression Denial of Service
+    cve_id: CVE-2022-25883
+    cve_url: https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+    detected_date: Jun 23
+    severity: moderate
+    first_patched: 5.7.2
+- name: "@octokit/rest"
+  description: GitHub REST API client for Node.js
+  package_url: https://www.npmjs.com/@octokit/rest
+  version: 9.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16999/default_43f23668e39c9b3381720c9c76540776b8a49167.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Cheng Zhao
+  last_updated_on: 2013-04-14 14:48:35.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 7.0.70
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: npm/package.json
+  last_updated_by: Mark Lee
+  last_updated_on: 2018-05-18 06:16:27.000000000 Z
+- name: basic-auth
+  description: Node.js basic auth parser
+  package_url: https://www.npmjs.com/basic-auth
+  version: 2.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17338/default_b39374c3a74b433364bfdbff07be26214bf186fd.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Felix Rieseberg
+  last_updated_on: 2018-06-20 07:18:24.000000000 Z
+- name: chai-as-promised
+  description: Extends Chai with assertions about promises
+  package_url: https://www.npmjs.com/chai-as-promised
+  version: 7.1.1
+  license: WTFPL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15970/default_cbd6c289400672b291755183817e9dd6abe1a612.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Shelley Vohr
+  last_updated_on: 2018-06-14 16:44:27.000000000 Z
+- name: clang-format
+  description: Node wrapper around clang-format
+  package_url: https://www.npmjs.com/clang-format
+  version: 1.2.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18178/default_d3a7b83d655e8a05ff3ca4b53648a053e1d909b2.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Heilig Benedek
+  last_updated_on: 2018-10-08 12:48:35.000000000 Z
+- name: coffee-script
+  description: Unfancy JavaScript
+  package_url: https://www.npmjs.com/coffee-script
+  version: 1.12.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15920/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Samuel Attard
+  last_updated_on: 2018-09-27 15:41:09.000000000 Z
+- name: colors
+  description: Get colors in your node.js console
+  package_url: https://www.npmjs.com/colors
+  version: 1.2.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15908/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Zeke Sikelianos
+  last_updated_on: 2017-08-09 17:49:31.000000000 Z
+- name: dirty-chai
+  description: Extends Chai with lint-friendly terminating assertions
+  package_url: https://www.npmjs.com/dirty-chai
+  version: 2.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16853/default_665377899254fe85c1cf6bf7f15e24c4180a76ac.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Shelley Vohr
+  last_updated_on: 2018-06-14 16:44:27.000000000 Z
+- name: eslint-config-standard
+  description: JavaScript Standard Style - ESLint Shareable Config
+  package_url: https://www.npmjs.com/eslint-config-standard
+  version: 12.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15872/default_e4668902f8489350db9b0fb228523a571ef05b26.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nitish Sakhawalkar
+  last_updated_on: 2018-10-15 15:26:47.000000000 Z
+- name: eslint-plugin-mocha
+  description: Eslint rules for mocha
+  package_url: https://www.npmjs.com/eslint-plugin-mocha
+  version: 5.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16194/default_fef27d1523ac1844fc00e83e47bddd8898ff8a89.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Nitish Sakhawalkar
+  last_updated_on: 2018-10-15 15:26:47.000000000 Z
+- name: extract-zip
+  description: Unzip a zip file into a directory using 100% javascript
+  package_url: https://www.npmjs.com/extract-zip
+  version: 1.0.3
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17488/default_2ae5beb193365eca46e337162957275ebc9c6b3b.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/npm/package.json
+  detection_source: npm/package.json
+  last_updated_by: Zeke Sikelianos
+  last_updated_on: 2017-05-11 06:38:51.000000000 Z
+- name: github
+  description: 'DEPRECATED: renamed to @octokit/rest'
+  package_url: https://www.npmjs.com/github
+  version: 9.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16751/default_6dc099b12d47e378ae121fb53c336fe5d8f0ffc8.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Vanessa Yuen
+  last_updated_on: 2017-07-13 21:09:21.000000000 Z
+- name: graceful-fs
+  description: A drop-in replacement for fs, making various improvements
+  package_url: https://www.npmjs.com/graceful-fs
+  version: 4.1.11
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16375/default_c47f6a56d74fae4d4404d77067b2fa35da6f1924.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Felix Rieseberg
+  last_updated_on: 2018-06-20 07:18:24.000000000 Z
+- name: html-entities
+  description: Faster HTML entities encode/decode library
+  package_url: https://www.npmjs.com/html-entities
+  version: 1.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17291/default_116e98e237458e603feb81cfbf628c00544be692.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Samuel Attard
+  last_updated_on: 2018-06-21 08:06:23.000000000 Z
+- name: husky
+  description: Prevents bad commit or push
+  package_url: https://www.npmjs.com/husky
+  version: 0.14.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15831/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Zeke Sikelianos
+  last_updated_on: 2017-07-12 17:18:40.000000000 Z
+- name: mkdirp
+  description: Recursively mkdir, like `mkdir -p`
+  package_url: https://www.npmjs.com/mkdirp
+  version: 0.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15881/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Felix Rieseberg
+  last_updated_on: 2018-06-20 07:18:24.000000000 Z
+- name: mocha-junit-reporter
+  description: A JUnit reporter for mocha
+  package_url: https://www.npmjs.com/mocha-junit-reporter
+  version: 1.17.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16739/default_ee69dab268e6a52104564fd4259549f5b48a25d4.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: John Kleinschmidt
+  last_updated_on: 2018-09-14 18:56:16.000000000 Z
+- name: multiparty
+  description: Multipart/form-data parser which supports streaming
+  package_url: https://www.npmjs.com/multiparty
+  version: 4.1.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17690/default_e87994647b10b361432e73d1831e5982307760e2.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/spec/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: John Kleinschmidt
+  last_updated_on: 2018-09-14 18:56:16.000000000 Z
+- name: path-exists
+  description: Check if a path exists
+  package_url: https://www.npmjs.com/path-exists
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16765/default_661bbd7f9556b6c5c0b8be11cd13e1813fc5c977.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: npm/package.json
+  last_updated_by: Mark Lee
+  last_updated_on: 2016-09-10 15:59:40.000000000 Z
+- name: recursive-readdir
+  description: Get an array of all files in a directory and subdirectories
+  package_url: https://www.npmjs.com/recursive-readdir
+  version: 2.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16636/default_5a21421012fa20e57fe0aeab31228f42e7118abc.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Charles Kerr
+  last_updated_on: 2018-09-05 23:16:42.000000000 Z
+- name: remark-cli
+  description: CLI to process Markdown with remark using plugins
+  package_url: https://www.npmjs.com/remark-cli
+  version: 4.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16755/default_6dc099b12d47e378ae121fb53c336fe5d8f0ffc8.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Heilig Benedek
+  last_updated_on: 2018-10-08 12:48:35.000000000 Z
+- name: send
+  description: Better streaming static file server with Range and conditional-GET
+    support
+  package_url: https://www.npmjs.com/send
+  version: 0.16.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17093/default_1dbf402c11ef653fcaedc84e608a244e30ebfb87.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Shelley Vohr
+  last_updated_on: 2018-05-22 04:15:18.000000000 Z
+- name: standard
+  description: JavaScript Standard Style
+  package_url: https://www.npmjs.com/standard
+  version: 12.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15878/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: npm/package.json
+  last_updated_by: Vanessa Yuen
+  last_updated_on: 2017-08-01 20:07:51.000000000 Z
+- name: temp
+  description: Temporary files and directories
+  package_url: https://www.npmjs.com/temp
+  version: 0.8.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16400/default_9ae0e75ed749aca83d89f7e1ccb309be2bfc610e.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Vanessa Yuen
+  last_updated_on: 2017-07-13 21:09:21.000000000 Z
+- name: yargs
+  description: Yargs the modern, pirate-themed, successor to optimist
+  package_url: https://www.npmjs.com/yargs
+  version: 3.10.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15887/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: https://github.com/vladdou/electron/blob/master/package-lock.json
+  detection_source: spec/package.json
+  last_updated_by: Felix Rieseberg
+  last_updated_on: 2018-06-20 07:18:24.000000000 Z
